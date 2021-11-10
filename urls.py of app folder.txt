@@ -1,0 +1,13 @@
+from django.contrib import admin
+from django.urls import path
+
+from .views import home,post_student, update_student,delete_student
+
+urlpatterns = [
+
+    path('', home),
+    path('student/', post_student),
+    path('update/<id>/', update_student),
+    path('delete/<id>/', delete_student),
+
+]
